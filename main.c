@@ -13,39 +13,29 @@ int main() {
 
   c.red = 0;
   c.green = MAX_COLOR;
-  c.blue = 0;
+  c.blue = MAX_COLOR;
 
   clear_screen(s);
 
-  //o1
-  draw_line(400, 400, 500, 450, s, c);
-  //o2
-  draw_line(400, 400, 450, 500, s, c);
-  //o3
-  draw_line(400, 400, 350, 500, s, c);
-  //o4
-  draw_line(400, 400, 300, 450, s, c);
-  //o5
-  draw_line(400, 400, 300, 350, s, c);
-  //o6
-  draw_line(400, 400, 350, 300, s, c);
-  //o7
-  draw_line(400, 400, 450, 300, s, c);
-  //o8
-  draw_line(400, 400, 500, 350, s, c);
+  draw_line(100, 100, 150, 80, s, c);//o8
+  draw_line(100, 100, 100, 350, s, c);//vertical (up)
+  draw_line(150, 330, 100, 350, s, c);//o4
+  draw_line(150, 330, 150, 80, s, c);//vertical (down)
+  draw_line(100, 350, 185, 455, s, c);//o2
+  draw_line(110, 347, 200, 450, s, c);//o2
+  draw_line(120, 344, 220, 440, s, c);//o1
+  draw_line(135, 338, 235, 430, s, c);//o1
+  draw_line(150, 330, 248, 418, s, c);//o1
+  draw_line(150, 80, 248, 168, s, c);//o1
+  draw_line(248, 418, 248, 168, s, c);//vertical (down)
+  draw_line(150, 80, 150, 330, s, c);//vertical (up)
 
-  //horizontal and vertical
-  draw_line(400, 400, 400, 500, s, c);
-  draw_line(400, 400, 500, 400, s, c);
-  draw_line(400, 400, 300, 400, s, c);
-  draw_line(400, 400, 400, 300, s, c);
- 
-  //diagonal 45 degrees
-  draw_line(400, 400, 500, 500, s, c);
-  draw_line(400, 400, 300, 300, s, c);
-  draw_line(400, 400, 300, 500, s, c);
-  draw_line(400, 400, 500, 300, s, c);
   
+  draw_line(185, 435, 185, 455, s, c);//vertical
+  draw_line(200, 450, 200, 420, s, c);//vertical
+  draw_line(220, 440, 220, 415, s, c);//vertical
+  draw_line(235, 430, 235, 405, s, c);//vertical
+
   display(s);
   save_extension(s, "lines.png");
 }
