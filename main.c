@@ -23,7 +23,7 @@ int main() {
   draw_line(150, 330, 150, 80, s, c);//vertical (down)
   draw_line(100, 350, 185, 455, s, c);//o2
   draw_line(110, 347, 200, 450, s, c);//o2
-  draw_line(120, 344, 220, 440, s, c);//o1
+  draw_line(121, 341, 220, 440, s, c);//o1
   draw_line(135, 338, 235, 430, s, c);//o1
   draw_line(150, 330, 248, 418, s, c);//o1
   draw_line(150, 80, 248, 168, s, c);//o1
@@ -35,6 +35,8 @@ int main() {
   draw_line(200, 450, 200, 420, s, c);//vertical
   draw_line(220, 440, 220, 415, s, c);//vertical
   draw_line(235, 430, 235, 405, s, c);//vertical
+  draw_line(248, 250, 500, 250, s, c);//horizontal
+  draw_line(250, 500, 500, 250, s, c);//-1
 
   display(s);
   save_extension(s, "lines.png");
